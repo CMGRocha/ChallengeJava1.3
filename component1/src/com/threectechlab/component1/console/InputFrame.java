@@ -15,10 +15,13 @@ public class InputFrame implements Runnable {
     }
 
 
+    /*
+    https://myshittycode.com/2014/03/26/findbug-solving-dm_default_encoding-warning-when-using-filewriter/
+     */
     public void run() {
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new InputStreamReader(System.in));
+            br = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
             System.out.print("Enter Messages to Print in Component 2 : ");
             System.out.print("To Exit type 'exit' ");
             while (true) {

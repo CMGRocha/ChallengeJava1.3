@@ -15,10 +15,13 @@ public class Client {
     private PrintWriter out;
     private BufferedReader in;
 
+    /*
+    https://myshittycode.com/2014/03/26/findbug-solving-dm_default_encoding-warning-when-using-filewriter/
+     */
     public void startConnection(String ip, int port) throws IOException {
         clientSocket = new Socket(ip, port);
         out = new PrintWriter(clientSocket.getOutputStream(), true);
-        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream(), "UTF-8"));
     }
 
     public String sendMessage(String msg) throws IOException {
