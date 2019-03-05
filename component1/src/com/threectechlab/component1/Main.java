@@ -1,8 +1,9 @@
 package com.threectechlab.component1;
 
-import com.threectechlab.component1.external.communication.Client;
-
-import java.io.IOException;
+import com.threectechlab.component1.concurrent.converter.SenderConverter;
+import com.threectechlab.component1.console.InputFrame;
+import com.threectechlab.component1.data.Queue;
+import com.threectechlab.component1.data.QueueImpl;
 
 public class Main {
 
@@ -10,18 +11,16 @@ public class Main {
     private static final int REMOTE_PORT = 3456;
 
 
-
     public static void main(String[] args) {
-        try {
-            final Client client = new Client();
-            client.startConnection(LOCALHOST, REMOTE_PORT);
-            final String response = client.sendMessage("hello Component 2");
-            client.sendMessage("Bye Now");
-            client.sendMessage(".");
-            client.stopConnection();
-            System.out.println(response);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        final Queue queue = new QueueImpl();
+        final InputFrame inputFrame = new InputFrame(queue);
+        final SenderConverter senderConverter = new SenderConverter(queue, LOCALHOST, REMOTE_PORT);
+
+        final Thread inputFrameThread = new Thread(inputFrame);
+        final Thread senderConverterThread = new Thread(senderConverter);
+        inputFrameThread.start();
+        senderConverterThread.start();
     }
+
+
 }

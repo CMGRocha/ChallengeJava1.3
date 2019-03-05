@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/*
+https://www.baeldung.com/a-guide-to-java-sockets
+ */
 public class Client {
 
     private Socket clientSocket;
