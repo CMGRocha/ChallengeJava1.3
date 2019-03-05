@@ -17,4 +17,4 @@ After writing the output message, it should notify Component 1 that the message 
 If necessary you can, or you should, add a complementary thread for the correct implementation of this exercise.
 The implementation of this exercise must be done using Java 1.3.
 
-![Visual Explanation](https://imgur.com/p7MzIyF)
+https://imgur.com/p7MzIyF
