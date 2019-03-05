@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4226e3-11b2-44a2-b2bc-c55b5e1215c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../component1/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../component1/src/com/threectechlab/component1/com/threectechlab/component1/external/communication/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/threectechlab/component2/external/communication/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/threectechlab/component2/external/communication/CommunicationServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../component1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../component1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../component1/src/com/threectechlab/component1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../component1/src/com/threectechlab/component1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../component1/src/com/threectechlab/component1/com/threectechlab/component1/external/communication/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../component1/src/com/threectechlab/component1/external/communication/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/threectechlab/component2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/threectechlab/component2/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -144,7 +138,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551798764935" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551799331393" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -190,12 +184,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551795036931</updated>
-      <workItem from="1551795042892" duration="2701000" />
+      <workItem from="1551795042892" duration="3490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2701000" />
+    <option name="totallyTimeSpent" value="3490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-3" width="1382" height="744" extended-state="6" />
@@ -206,7 +200,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -216,7 +210,7 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
