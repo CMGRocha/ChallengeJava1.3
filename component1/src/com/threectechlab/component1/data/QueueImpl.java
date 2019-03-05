@@ -2,12 +2,15 @@ package com.threectechlab.component1.data;
 
 import java.util.LinkedList;
 
+/*
+    https://stackoverflow.com/questions/11149707/best-implementation-of-java-queue
+ */
 public class QueueImpl implements Queue {
 
     private final Object lock = new Object();
-    LinkedList content;
+    private LinkedList content;
 
-    QueueImpl() {
+    public QueueImpl() {
         content = new LinkedList();
     }
 
@@ -22,6 +25,12 @@ public class QueueImpl implements Queue {
             Object result = content.getFirst();
             content.removeFirst();
             return result;
+        }
+    }
+
+    public boolean isEmpty() {
+        synchronized (lock) {
+            return content.isEmpty();
         }
     }
 
