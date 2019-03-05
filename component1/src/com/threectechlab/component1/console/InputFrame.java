@@ -25,7 +25,7 @@ public class InputFrame implements Runnable {
                 String input = br.readLine();
                 if ("exit".equals(input)) {
                     System.out.println("Exit!");
-                    System.exit(0);
+                    break;
                 }
                 queue.enQueue(input);
             }
