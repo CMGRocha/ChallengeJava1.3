@@ -4,7 +4,7 @@ public class Printer {
 
     public String convertPrint(final String message) {
         try {
-            System.out.println("Message Received : " + message);
+            //System.out.println("Message Received : " + message);
             final String decodedMessage = decode(message);
             System.out.println("Printed from Component 1 : " + decodedMessage);
             return "Printed Successfully";

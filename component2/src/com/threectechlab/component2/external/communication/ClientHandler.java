@@ -28,7 +28,6 @@ public class ClientHandler implements Runnable {
 
             String inputLine;
             while ((inputLine = in.readLine()) != null) {
-                System.out.println(inputLine);
                 if (".".equals(inputLine)) {
                     out.println("bye");
                     break;
@@ -36,7 +35,6 @@ public class ClientHandler implements Runnable {
                     final String response = printer.convertPrint(inputLine);
                     out.println(response);
                 }
-                out.println(inputLine);
             }
 
             in.close();

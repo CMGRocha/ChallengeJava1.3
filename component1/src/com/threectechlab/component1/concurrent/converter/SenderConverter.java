@@ -22,19 +22,19 @@ public class SenderConverter implements Runnable {
         while (true) {
             if (queue.isEmpty()) {
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(10000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             } else {
                 String message = (String) queue.deQueue();
-                System.out.println("Message from queue : " + message);
+                //System.out.println("Message from queue : " + message);
 
                 String messageEncoded = encodeMessage(message);
-                System.out.println("Encoded Message : " + messageEncoded);
+                //System.out.println("Encoded Message : " + messageEncoded);
 
                 String response = sendToComponent2(messageEncoded);
-                System.out.println("Component 2 Replied with : " + response);
+                //System.out.println("Component 2 Replied with : " + response);
             }
         }
 
