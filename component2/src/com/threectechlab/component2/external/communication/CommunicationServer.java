@@ -1,10 +1,11 @@
 package com.threectechlab.component2.external.communication;
 
-import com.threectechlab.component2.external.communication.ClientHandler;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 
+/*
+    https://www.baeldung.com/a-guide-to-java-sockets
+ */
 public class CommunicationServer {
     private ServerSocket serverSocket;
 
