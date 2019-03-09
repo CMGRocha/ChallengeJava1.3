@@ -10,6 +10,7 @@ public class SenderConverter implements Runnable {
     private Queue queue;
     private String localHost;
     private int remotePort;
+    private volatile boolean running;
 
     public SenderConverter(final Queue queue, final String localHost, final int remotePort) {
         this.queue = queue;
@@ -18,8 +19,8 @@ public class SenderConverter implements Runnable {
     }
 
     public void run() {
-
-        while (true) {
+        running = true;
+        while (running) {
             if (!queue.isEmpty()) {
                 String message = (String) queue.deQueue();
                 //System.out.println("Message from queue : " + message);
@@ -59,5 +60,9 @@ public class SenderConverter implements Runnable {
             e.printStackTrace();
         }
         return "Error";
+    }
+
+    public synchronized void setRunning(final boolean running) {
+        this.running = running;
     }
 }

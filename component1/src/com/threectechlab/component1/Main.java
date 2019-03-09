@@ -20,6 +20,13 @@ public class Main {
         final Thread senderConverterThread = new Thread(senderConverter);
         inputFrameThread.start();
         senderConverterThread.start();
+
+        while (true) {
+            if (!inputFrameThread.isAlive()) {
+                senderConverter.setRunning(false);
+                break;
+            }
+        }
     }
 
 
