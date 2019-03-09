@@ -20,13 +20,7 @@ public class SenderConverter implements Runnable {
     public void run() {
 
         while (true) {
-            if (queue.isEmpty()) {
-                try {
-                    Thread.sleep(10000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            } else {
+            if (!queue.isEmpty()) {
                 String message = (String) queue.deQueue();
                 //System.out.println("Message from queue : " + message);
 

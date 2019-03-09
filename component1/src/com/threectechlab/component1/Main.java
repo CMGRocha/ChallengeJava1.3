@@ -2,8 +2,8 @@ package com.threectechlab.component1;
 
 import com.threectechlab.component1.concurrent.converter.SenderConverter;
 import com.threectechlab.component1.console.InputFrame;
+import com.threectechlab.component1.data.BlockingQueue;
 import com.threectechlab.component1.data.Queue;
-import com.threectechlab.component1.data.QueueImpl;
 
 public class Main {
 
@@ -12,7 +12,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        final Queue queue = new QueueImpl();
+        final Queue queue = new BlockingQueue();
         final InputFrame inputFrame = new InputFrame(queue);
         final SenderConverter senderConverter = new SenderConverter(queue, LOCALHOST, REMOTE_PORT);
 
